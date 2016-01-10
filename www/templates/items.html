@@ -1,0 +1,12 @@
+<ion-view view-title="Catalogue" ng-init="retrieveItems()">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="item in itemsList" class="item item-icon-left">
+        <i class="icon ion-ios-cart"></i>
+        <h2>{{item.name}}</h2>
+        <p>{{item.description}}</p>
+        <p><b>Price  </b>{{item.price}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
